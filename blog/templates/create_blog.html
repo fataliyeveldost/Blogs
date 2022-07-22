@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+
+<form method='POST'>
+  {% csrf_token %} 
+  <div class='form-group col-1' >
+    
+  {{forms.as_p}}
+      
+
+<button type='submit' class='btn btn-primary'>Create</button>
+</form>
+</div>
+
+{% endblock  %}
