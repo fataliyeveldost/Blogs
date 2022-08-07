@@ -21,4 +21,6 @@ urlpatterns = [
     path('', include('blog.urls')),
     path('acount/', include('acount.urls')),
     path('api-v1/', include('api.v1.urls')),
+
+
 ]
