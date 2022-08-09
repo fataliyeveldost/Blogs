@@ -67,19 +67,3 @@ def delete_blog(request,pk):
 
 
 
-from rest_framework.response import Response
-from blog.models import Blog
-from rest_framework.decorators import api_view
-from api.v1.serializers import BlogSerializers,UserSerializers
-from rest_framework import status,generics
-from acount.models import CustomUser
-
-
-
-class BlogListCreateApiView(generics.ListCreateAPIView):
-    queryset=Blog.objects.all()
-    serializer_class=BlogSerializers
-
-class UserListCreateApiView(generics.ListCreateAPIView):
-    queryset=CustomUser.objects.all()
-    serializer_class=UserSerializers

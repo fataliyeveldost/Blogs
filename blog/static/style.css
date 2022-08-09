@@ -1,16 +1,10 @@
 h1{
 color: blue;
 margin: 20px;
-background-color: aquamarine;
 }
 
 p{
-color: blue;
+color: rgb(26, 26, 41);
 margin: 20px;
-background-color: deepskyblue;
 
-}
-
-form{
-background-color: blue;
 }
